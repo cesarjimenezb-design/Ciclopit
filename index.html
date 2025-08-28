@@ -196,7 +196,7 @@
 <!-- Botones de acción -->
 <div class="btns">
 <button class="btn btn-print" onclick="window.print()">Imprimir / Guardar como PDF</button>
-<button class="btn btn-close" onclick="history.back(); location.reload();">Volver</button>
+<button class="btn btn-close" onclick="window.close()"></button>
 </div>
 </div>
 <script>
@@ -247,8 +247,5 @@
       document.getElementById('limpiarFirma').addEventListener('click', ()=>ctx.clearRect(0,0,canvas.width,canvas.height));
     })();
   </script>
-</body>
+<button onclick="if(confirm('¿Deseas volver a la página anterior?')){ window.history.back(); }">Volver</button></body>
 </html>
-
-
-
