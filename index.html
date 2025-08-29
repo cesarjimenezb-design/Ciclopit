@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
 <title>Orden de Trabajo - CICLOPIT / Teletón</title>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
     :root {
       --bg: #f8f8f8;
@@ -88,29 +87,32 @@
       .firma-box { border: 1px solid #000; }
       .badge { border: 1px solid #000; }
     }
-  </style>
+</style>
 </head>
 <body>
 <div class="container">
 <h2>ORDEN DE TRABAJO - CICLOPIT / TELETÓN</h2>
 <h4>Datos del Paciente - N° Ficha: 121212</h4>
+
+<!-- Datos del paciente -->
 <div class="section">
 <table>
 <tr>
-<td><b>Nombre</b><br/><input readonly="" type="text" value="Carlos Andrés"/></td>
-<td><b>Apellido Paterno</b><br/><input readonly="" type="text" value="González"/></td>
-<td><b>Apellido Materno</b><br/><input readonly="" type="text" value="Rojas"/></td>
+<td><b>Nombre</b><br/><input readonly type="text" value="Carlos Andrés"/></td>
+<td><b>Apellido Paterno</b><br/><input readonly type="text" value="González"/></td>
+<td><b>Apellido Materno</b><br/><input readonly type="text" value="Rojas"/></td>
 </tr>
 </table>
 </div>
+
 <!-- Información General -->
 <div class="section">
 <h3>Información General</h3>
 <table>
 <tr>
-<td><b>N° OT</b><br/><input readonly="" type="text" value="2025-OT-00123"/></td>
-<td><b>Fecha de Mantenimiento</b><br/><input readonly="" type="date" value="2025-08-18"/></td>
-<td><b>Lugar de Atención</b><br/><input readonly="" type="text" value="Instituto Teletón - Sede Santiago"/></td>
+<td><b>N° OT</b><br/><input readonly type="text" value="2025-OT-00123"/></td>
+<td><b>Fecha de Mantenimiento</b><br/><input readonly type="date" value="2025-08-18"/></td>
+<td><b>Lugar de Atención</b><br/><input readonly type="text" value="Instituto Teletón - Sede Santiago"/></td>
 <td>
 <b>Entrega Tríptico</b><br/>
 <span class="badge">✅ Sí</span>
@@ -118,7 +120,8 @@
 </tr>
 </table>
 </div>
-<!-- Voluntarios Asignados -->
+
+<!-- Voluntarios -->
 <div class="section">
 <h3>Voluntarios Asignados</h3>
 <table>
@@ -131,25 +134,49 @@
 </thead>
 <tbody>
 <tr>
-<td><input readonly="" type="text" value="César Jiménez"/></td>
-<td><input readonly="" type="text" value="12.345.678-9"/></td>
-<td><input readonly="" type="text" value="Voluntario CICLOPIT"/></td>
+<td><input readonly type="text" value="César Jiménez"/></td>
+<td><input readonly type="text" value="12.345.678-9"/></td>
+<td><input readonly type="text" value="Voluntario CICLOPIT"/></td>
 </tr>
 <tr>
-<td><input readonly="" type="text" value="María López"/></td>
-<td><input readonly="" type="text" value="9.876.543-2"/></td>
-<td><input readonly="" type="text" value="Voluntario CICLOPIT"/></td>
+<td><input readonly type="text" value="María López"/></td>
+<td><input readonly type="text" value="9.876.543-2"/></td>
+<td><input readonly type="text" value="Voluntario CICLOPIT"/></td>
 </tr>
 </tbody>
 </table>
 </div>
-<!-- Ayudas Técnicas Intervenidas -->
+
+<!-- Ayudas Técnicas -->
 <div class="section">
 <h3 class="title-inline">
-        Ayudas Técnicas Intervenidas
-        <span class="nficha">N° Ficha: <input readonly="" type="text" value="121212"/></span>
+  Ayudas Técnicas Intervenidas
+  <span class="nficha">N° Ficha: <input readonly type="text" value="121212"/></span>
 </h3>
-<textarea readonly="">Cambio de rueda derecha de silla de ruedas por desgaste. Se realizó revisión general y ajuste de la estructura.</textarea>
+<textarea readonly>
+Cambio de rueda derecha de silla de ruedas por desgaste. Se realizó revisión general y ajuste de la estructura.
+</textarea>
+
+<h4 style="margin-top:15px;">Detalle de Ayuda Técnica</h4>
+<table>
+<thead>
+<tr>
+<th>Tipo de Ayuda Técnica</th>
+<th>Marca</th>
+<th>Modelo</th>
+<th>Tamaño</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><input readonly type="text" value="Silla de Ruedas"/></td>
+<td><input readonly type="text" value="AWM"/></td>
+<td><input readonly type="text" value="XR-300"/></td>
+<td><input readonly type="text" value="Chica"/></td>
+</tr>
+</tbody>
+</table>
+
 <h4 style="margin-top:15px;">Repuestos Cambiados</h4>
 <table>
 <thead>
@@ -160,24 +187,25 @@
 </thead>
 <tbody>
 <tr>
-<td><input readonly="" type="text" value="Rueda trasera 24 pulgadas"/></td>
-<td><input readonly="" type="text" value="1"/></td>
+<td><input readonly type="text" value="Rueda trasera 24 pulgadas"/></td>
+<td><input readonly type="text" value="1"/></td>
 </tr>
 <tr>
-<td><input readonly="" type="text" value="Tornillos de sujeción"/></td>
-<td><input readonly="" type="text" value="4"/></td>
+<td><input readonly type="text" value="Tornillos de sujeción"/></td>
+<td><input readonly type="text" value="4"/></td>
 </tr>
 </tbody>
 </table>
 </div>
+
 <!-- Tutor Responsable -->
 <div class="section">
 <h3>Tutor Responsable</h3>
 <table>
 <tr>
-<td><b>Nombre</b><br/><input readonly="" type="text" value="Juan Pérez"/></td>
-<td><b>RUN</b><br/><input readonly="" type="text" value="11.111.111-1"/></td>
-<td><b>Correo</b><br/><input readonly="" type="email" value="juanperez@ejemplo.cl"/></td>
+<td><b>Nombre</b><br/><input readonly type="text" value="Juan Pérez"/></td>
+<td><b>RUN</b><br/><input readonly type="text" value="11.111.111-1"/></td>
+<td><b>Correo</b><br/><input readonly type="email" value="juanperez@ejemplo.cl"/></td>
 <td>
 <b>Firma Digital (editable)</b><br/>
 <div class="firma-wrap">
@@ -190,63 +218,65 @@
 </tr>
 </table>
 </div>
+
 <small>
-      *Doy fe que las asistencias técnicas detalladas han sido realizadas conforme a los estándares del programa CICLOPIT por los voluntarios registrados. Confirmo haber recibido el servicio técnico y que los dispositivos se encuentran en condiciones funcionales al momento de la entrega.*
-    </small>
-<!-- Botones de acción -->
+*Doy fe que las asistencias técnicas detalladas han sido realizadas conforme a los estándares del programa CICLOPIT por los voluntarios registrados. Confirmo haber recibido el servicio técnico y que los dispositivos se encuentran en condiciones funcionales al momento de la entrega.*
+</small>
+
+<!-- Botones -->
 <div class="btns">
 <button class="btn btn-print" onclick="window.print()">Imprimir / Guardar como PDF</button>
 <button class="btn btn-close" onclick="if(confirm('¿Deseas volver a la página de inicio?')){ window.location.href=''; }">Volver</button>
 </div>
 </div>
+
 <script>
-    // Firma en canvas
-    (function(){
-      const canvas = document.getElementById('firma');
-      const ctx = canvas.getContext('2d');
-      let drawing = false, lastX = 0, lastY = 0;
+// Firma en canvas
+(function(){
+  const canvas = document.getElementById('firma');
+  const ctx = canvas.getContext('2d');
+  let drawing = false, lastX = 0, lastY = 0;
 
-      function resizeCanvas() {
-        const data = canvas.toDataURL();
-        const img = new Image();
-        img.onload = function() {
-          canvas.width = canvas.clientWidth;
-          canvas.height = canvas.clientHeight;
-          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-        };
-        img.src = data;
-      }
-      function initSize() {
-        canvas.width = canvas.clientWidth;
-        canvas.height = canvas.clientHeight;
-      }
-      initSize();
-      window.addEventListener('resize', resizeCanvas);
+  function resizeCanvas() {
+    const data = canvas.toDataURL();
+    const img = new Image();
+    img.onload = function() {
+      canvas.width = canvas.clientWidth;
+      canvas.height = canvas.clientHeight;
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    };
+    img.src = data;
+  }
+  function initSize() {
+    canvas.width = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
+  }
+  initSize();
+  window.addEventListener('resize', resizeCanvas);
 
-      ctx.lineJoin = 'round'; ctx.lineCap = 'round'; ctx.lineWidth = 2;
+  ctx.lineJoin = 'round'; ctx.lineCap = 'round'; ctx.lineWidth = 2;
 
-      function getPos(e){
-        const r = canvas.getBoundingClientRect();
-        if (e.touches && e.touches[0]) {
-          return { x: e.touches[0].clientX - r.left, y: e.touches[0].clientY - r.top };
-        } else {
-          return { x: e.clientX - r.left, y: e.clientY - r.top };
-        }
-      }
-      function start(e){ drawing = true; const p = getPos(e); lastX = p.x; lastY = p.y; e.preventDefault();}
-      function move(e){ if(!drawing) return; const p = getPos(e); ctx.beginPath(); ctx.moveTo(lastX, lastY); ctx.lineTo(p.x, p.y); ctx.stroke(); lastX=p.x; lastY=p.y; e.preventDefault();}
-      function end(){ drawing=false; }
+  function getPos(e){
+    const r = canvas.getBoundingClientRect();
+    if (e.touches && e.touches[0]) {
+      return { x: e.touches[0].clientX - r.left, y: e.touches[0].clientY - r.top };
+    } else {
+      return { x: e.clientX - r.left, y: e.clientY - r.top };
+    }
+  }
+  function start(e){ drawing = true; const p = getPos(e); lastX = p.x; lastY = p.y; e.preventDefault();}
+  function move(e){ if(!drawing) return; const p = getPos(e); ctx.beginPath(); ctx.moveTo(lastX, lastY); ctx.lineTo(p.x, p.y); ctx.stroke(); lastX=p.x; lastY=p.y; e.preventDefault();}
+  function end(){ drawing=false; }
 
-      canvas.addEventListener('mousedown', start);
-      canvas.addEventListener('mousemove', move);
-      window.addEventListener('mouseup', end);
-      canvas.addEventListener('touchstart', start, {passive:false});
-      canvas.addEventListener('touchmove', move, {passive:false});
-      canvas.addEventListener('touchend', end);
+  canvas.addEventListener('mousedown', start);
+  canvas.addEventListener('mousemove', move);
+  window.addEventListener('mouseup', end);
+  canvas.addEventListener('touchstart', start, {passive:false});
+  canvas.addEventListener('touchmove', move, {passive:false});
+  canvas.addEventListener('touchend', end);
 
-      document.getElementById('limpiarFirma').addEventListener('click', ()=>ctx.clearRect(0,0,canvas.width,canvas.height));
-    })();
-  </script>
+  document.getElementById('limpiarFirma').addEventListener('click', ()=>ctx.clearRect(0,0,canvas.width,canvas.height));
+})();
+</script>
 </body>
 </html>
-
