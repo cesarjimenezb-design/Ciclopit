@@ -129,7 +129,8 @@
         <td><b>Lugar de Atención</b><br/><input readonly type="text" value="Instituto Teletón - Santiago"/></td>
         <td>
           <b>Entrega Tríptico</b><br/>
-          <span class="badge">✅ Sí</span>
+          <label><input type="radio" name="triptico" checked disabled> Sí</label>
+          <label><input type="radio" name="triptico" disabled> No</label>
         </td>
       </tr>
     </table>
@@ -164,11 +165,8 @@
   <!-- Ayudas Técnicas -->
   <div class="section">
     <h3 class="title-inline">
-      Ayudas Técnicas Intervenidas
+      Detalle de Ayuda Técnica
     </h3>
-    <textarea readonly>Cambio de rueda derecha de silla de ruedas por desgaste. Se realizó revisión general y ajuste de la estructura.</textarea>
-
-    <h4 style="margin-top:10px;">Detalle de Ayuda Técnica</h4>
     <table>
       <thead>
         <tr>
@@ -187,6 +185,9 @@
         </tr>
       </tbody>
     </table>
+
+    <h4 style="margin-top:10px;">Ayudas Técnicas Intervenidas</h4>
+    <textarea readonly>Cambio de rueda derecha de silla de ruedas por desgaste. Se realizó revisión general y ajuste de la estructura.</textarea>
 
     <h4 style="margin-top:10px;">Repuestos Cambiados</h4>
     <table>
@@ -294,5 +295,3 @@
 </script>
 </body>
 </html>
-
-
